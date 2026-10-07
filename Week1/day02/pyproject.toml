@@ -1,0 +1,25 @@
+[project]
+name = "day02"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "heyyash-input", email = "yashpatil8930@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "groq>=1.7.0",
+    "python-dotenv>=1.2.4",
+]
+
+[project.scripts]
+day02 = "day02:main"
+
+[build-system]
+requires = ["uv_build>=0.12.23,<0.13.0"]
+build-backend = "uv_build"
+
+[tool.uv.workspace]
+members = [
+    "day2.md",
+]
